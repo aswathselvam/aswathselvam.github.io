@@ -18,19 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+locale                   : "en-US"
+title: Aswath Muthuselvam
+email: aswath@umd.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aswathselvam.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  aswathselvam
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
@@ -53,3 +56,52 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+#Tab image
+teaser: /assets/images/teaser.png
+
+#masthead_title: "Aswath Muthuselvam"
+breadcrumbs: true
+
+#Author Info
+author:
+  name   : "Aswath Muthuselvam"
+  avatar : "/assets/images/myphoto.png"
+  bio    : >-
+    I am Aswath, graduate student pursuing M.Eng in Robotics at University of Maryland.
+    You can read more about me in the [About me](/about/) section.
+  location: "Maryland, USA"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:aswath@umd.edu"
+
+
+include: 
+  - _pages
+
+
+# Analytics
+#analytics:
+#  provider               : "google" # false (default), "google", "google-universal", "custom"
+#  google:
+#    tracking_id          : 
+#    anonymize_ip         : true # true, false (default)
+
+
+
+#Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/aswathselvam"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/aswath-m/"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/"
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/15302683/aswath"

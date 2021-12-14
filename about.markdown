@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: splash
+classes:
+  - landing
 title: About
 permalink: /about/
 ---
