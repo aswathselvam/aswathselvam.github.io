@@ -67,8 +67,7 @@ breadcrumbs: true
 author:
   name   : "Aswath Muthuselvam"
   avatar : "/assets/images/myphoto.png"
-  bio    : >-
-    I am Aswath, graduate student pursuing M.Eng in Robotics at University of Maryland.
+  bio    : I am Aswath, graduate student pursuing M.Eng in Robotics at University of Maryland.
     You can read more about me in the [About me](/about/) section.
   location: "Maryland, USA"
   links:
