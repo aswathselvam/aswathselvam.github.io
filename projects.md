@@ -20,9 +20,9 @@ Project github page [link](https://github.com/aswathselvam/enpm662_final_project
 Project github page [link](https://github.com/aswathselvam/AcmeRoboticsPathPlanner)
 
 # Ground plane segmentation
+Using an RGB image of dimension 128x128 to predict the free space on the ground for a wheeled mobile robot to navigate its environment.
 
 **With Neural Network:**
-Using an RGB image dimension of 128x128 
 Customized Unet on custom dataset gave 7ms Inference time.
 
 
