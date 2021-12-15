@@ -7,3 +7,25 @@ permalink: /projects/
 ---
 
 
+# Swarm Robots
+Project github page [link](https://github.com/aswathselvam/swarm_robots)
+
+# OmniDirectinal Robot with UR5 Arm
+<iframe width="100" height="75" src="https://www.youtube.com/embed/qoDo5TzVyWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Project github page [link](https://github.com/aswathselvam/enpm662_final_project)
+
+# Inverse Kinematics of Robotic Arm
+
+Project github page [link](https://github.com/aswathselvam/AcmeRoboticsPathPlanner)
+
+# Ground plane segmentation
+
+**With Neural Network:**
+Using an RGB image dimension of 128x128 
+Customized Unet on custom dataset gave 7ms Inference time.
+
+
+**With Classical vision:**
+2ms inference time, video below
+<iframe width="100" height="75" src="https://www.youtube.com/embed/aQgTL-L6xbQ?list=PLRlckhzuFOGdQHNsBCSsne9apPbGX_QKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
