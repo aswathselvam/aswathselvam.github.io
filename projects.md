@@ -26,6 +26,8 @@ feature_row:
 # Swarm Robots
 Multiple agents push a large object. Each agent plans a path to the destination using RRT* algorithm.
 
+<iframe width="500" height="350" src="https://www.youtube.com/embed/7a76u_0sosA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Project github page [link](https://github.com/aswathselvam/swarm_robots)
 
 # OmniDirectinal Robot with UR5 Arm
@@ -45,7 +47,9 @@ Technical details:
 Project github page [link](https://github.com/aswathselvam/enpm662_final_project)
 
 # Inverse Kinematics of Robotic Arm
-Inverse kinematics for a 6-DOF Robotic arm is calcuated by taking Jacobian Pseudo-Inverse of the Forward Transformation of each arm joints. 
+Inverse kinematics for a 6-DOF Robotic arm is calcuated by taking Jacobian Pseudo-Inverse of the Forward Transformation of each arm joints. Implemented with Coppelia-Sim simulation software.
+
+<iframe width="500" height="350" src="https://www.youtube.com/embed/_j-51JeMeYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Project github page [link](https://github.com/aswathselvam/AcmeRoboticsPathPlanner)
 
