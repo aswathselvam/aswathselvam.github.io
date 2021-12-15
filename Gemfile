@@ -14,3 +14,4 @@ gem "minimal-mistakes-jekyll"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
+gem "jekyll-include-cache", group: :jekyll_plugins
