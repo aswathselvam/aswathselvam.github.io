@@ -33,7 +33,6 @@ twitter_username: jekyllrb
 github_username:  aswathselvam
 
 # Build settings
-theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
 
 plugins:
