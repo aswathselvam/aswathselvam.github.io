@@ -34,6 +34,8 @@ github_username:  aswathselvam
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+paginate: 5 # amount of posts to show
+
 
 plugins:
   - jekyll-paginate
@@ -82,9 +84,6 @@ author:
       url: "mailto:aswath@umd.edu"
 
 
-include: 
-  - _pages
-
 
 # Analytics
 #analytics:
@@ -104,9 +103,6 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/aswath-m/"
-#    - label: "Twitter"
-#      icon: "fab fa-fw fa-twitter-square"
-#      url: "https://twitter.com/"
     - label: "Stack Overflow"
       icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/users/15302683/aswath"
