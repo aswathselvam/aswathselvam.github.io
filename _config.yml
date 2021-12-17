@@ -87,7 +87,7 @@ author:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-QHXC3VR0V-L
+    tracking_id          : UA-215555855-1
     anonymize_ip         : true # true, false (default)
 
 
