@@ -22,6 +22,54 @@ feature_row:
     excerpt: "This is some sample content that goes here with **Markdown** formatting." 
 ---
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+   height: 700px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<!---
+Color Palatte
+Aqua: 
+Background: #f0fff0
+UI: #1976d2
+Text: #0f477e
+
+Air: 
+Background: #eeeeee
+UI: #0092ca
+Text: #2c2a3a
+
+Mint:
+Background: #f3f6f6
+UI: #11999e
+Text: #425150
+Footer: #30e3ca
+
+Contrast:
+Background: #ffffff
+UI: #ff0000
+Text, Footer: #010101
+-->
+
+
+<div class="row">
+  <div class="column" style="background-color:#e0efe0;" markdown="1">
 
 # Swarm Robots
 Multiple agents push a large object. Each agent plans a path to the destination using RRT* algorithm.
@@ -30,13 +78,28 @@ Multiple agents push a large object. Each agent plans a path to the destination 
 
 Project github page [link](https://github.com/aswathselvam/swarm_robots)
 
+  </div>
+
+  <div class="column" style="background-color:#e0efe0;" markdown="1">
+    
+# Inverse Kinematics of Robotic Arm
+Inverse kinematics for a 6-DOF Robotic arm is calcuated by taking Jacobian Pseudo-Inverse of the Forward Transformation of each arm joints. Implemented with Coppelia-Sim simulation software.
+
+<iframe width="500" height="350" src="https://www.youtube.com/embed/_j-51JeMeYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Project github page [link](https://github.com/aswathselvam/AcmeRoboticsPathPlanner)
+
+  </div>
+</div>
+
+
 # OmniDirectinal Robot with UR5 Arm
 Overview:
 1. A 6DOF arm can manipulate objects in SO3(any position x,y,z or roll,pitch,yaw angles) space, however, one constraint remains, the arm's reachability.
 2. OmniDirectional wheeled mobile robots are free to move in the XY plane in any direction, allowing more freedom of movement than Non-Holonomic Car like robots. 
 
 Combine these two ideas, we get a high DOF arm + infinite reachability in XY plane. 
- To name a couple of examples, these robots can be used in warehouse operations and perform agricultural tasks.   
+To name a couple of examples, these robots can be used in warehouse operations and perform agricultural tasks.   
 
 Technical details: 
 1. For Arm: Calculation of inverse kinematic for the arm using Pseudo-Inverse Jacibian.
@@ -46,12 +109,6 @@ Technical details:
 
 Project github page [link](https://github.com/aswathselvam/enpm662_final_project)
 
-# Inverse Kinematics of Robotic Arm
-Inverse kinematics for a 6-DOF Robotic arm is calcuated by taking Jacobian Pseudo-Inverse of the Forward Transformation of each arm joints. Implemented with Coppelia-Sim simulation software.
-
-<iframe width="500" height="350" src="https://www.youtube.com/embed/_j-51JeMeYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Project github page [link](https://github.com/aswathselvam/AcmeRoboticsPathPlanner)
 
 # Ground plane segmentation
 Using an RGB image of dimension 128x128 to predict the free space on the ground for a wheeled mobile robot to navigate its environment.
