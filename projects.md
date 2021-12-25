@@ -31,8 +31,8 @@ feature_row:
 .column {
   float: left;
   width: 50%;
-  padding: 10px;
-   height: 700px;
+  padding: 50px;
+  /* height: 700px; */
 }
 
 /* Clear floats after the columns */
@@ -68,45 +68,19 @@ Text, Footer: #010101
 -->
 
 
-<div class="row">
-  <div class="column" style="background-color:#e0efe0;" markdown="1">
-
-# Swarm Robots
-Multiple agents push a large object. Each agent plans a path to the destination using RRT* algorithm.
-
-<iframe width="500" height="350" src="https://www.youtube.com/embed/7a76u_0sosA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Project github page [link](https://github.com/aswathselvam/swarm_robots)
-
-  </div>
-
-  <div class="column" style="background-color:#e0efe0;" markdown="1">
-    
-# Inverse Kinematics of Robotic Arm
-Inverse kinematics for a 6-DOF Robotic arm is calcuated by taking Jacobian Pseudo-Inverse of the Forward Transformation of each arm joints. Implemented with Coppelia-Sim simulation software.
-
-<iframe width="500" height="350" src="https://www.youtube.com/embed/_j-51JeMeYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Project github page [link](https://github.com/aswathselvam/AcmeRoboticsPathPlanner)
-
-  </div>
-</div>
-
-
 # OmniDirectinal Robot with UR5 Arm
-Overview:
+**Overview:**
 1. A 6DOF arm can manipulate objects in SO3(any position x,y,z or roll,pitch,yaw angles) space, however, one constraint remains, the arm's reachability.
 2. OmniDirectional wheeled mobile robots are free to move in the XY plane in any direction, allowing more freedom of movement than Non-Holonomic Car like robots. 
 
 Combine these two ideas, we get a high DOF arm + infinite reachability in XY plane. 
 To name a couple of examples, these robots can be used in warehouse operations and perform agricultural tasks.   
 
-Technical details: 
+**Technical approach:**
 1. For Arm: Calculation of inverse kinematic for the arm using Pseudo-Inverse Jacibian.
-2. For base: Calculation of angular velocity of motors by inverting Forward Transformation from base frame to wheel frame. Then using PID for feedback control using errors in position. 
+2. For Robot base: Calculation of angular velocity of motors by inverting Forward Transformation from base frame to wheel frame. Then using PID for feedback control using errors in position. 
 
 <iframe width="500" height="350" src="https://www.youtube.com/embed/qoDo5TzVyWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Project github page [link](https://github.com/aswathselvam/enpm662_final_project)
 
 
@@ -126,3 +100,33 @@ Running customized [Unet](https://arxiv.org/abs/1505.04597) on prepared dataset 
 
 2ms inference time, video below:
 <iframe width="500" height="350" src="https://www.youtube.com/embed/aQgTL-L6xbQ?list=PLRlckhzuFOGdQHNsBCSsne9apPbGX_QKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<div class="row">
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+<h1><center> Swarm Robots</center></h1>
+<iframe width="500" height="350" src="https://www.youtube.com/embed/7a76u_0sosA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Project github page [link](https://github.com/aswathselvam/swarm_robots)
+
+Multiple agents push a large object. Each agent plans a path to the destination using RRT* algorithm.
+
+  </div>
+
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+    
+<h1><center> Inverse Kinematics of UR5 Arm </center></h1>
+
+<iframe width="500" height="350" src="https://www.youtube.com/embed/_j-51JeMeYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Project github page [link](https://github.com/aswathselvam/AcmeRoboticsPathPlanner)
+
+Inverse kinematics for a 6-DOF Robotic arm is calcuated by taking Jacobian Pseudo-Inverse of the Forward Transformation of each arm joints. Implemented with Coppelia-Sim simulation software.
+
+  </div>
+</div>
+
+# Realtime pothole Detection
+An Android mobile phone's accelerometer and Gyroscope data is used to detect potholes in realtime.
+![Image](https://user-images.githubusercontent.com/7314342/84470416-f26a0280-aca0-11ea-8fc1-d0a50099a787.png)
+Project github page [link](https://github.com/aswathselvam/Potholes)
