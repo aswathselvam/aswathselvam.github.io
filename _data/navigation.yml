@@ -5,3 +5,16 @@ main:
     url:  /publications/
   - title: "Resume"
     url:  https://drive.google.com/file/d/10VwTVtPlpl0fSlB2rbUKmEobyGJ6LFHR/view?usp=sharing
+
+
+projects-list:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/

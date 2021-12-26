@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: "Home"
 layout: splash
+author_profile: false
+
 ---
 
 <img src="/assets/images/myphoto.jpg" alt="Me" width="200"/>
