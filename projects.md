@@ -34,7 +34,7 @@ feature_row:
 .column {
   float: left;
   width: 50%;
-  padding: 50px;
+  padding: 1%;
   /* height: 700px; */
 }
 
