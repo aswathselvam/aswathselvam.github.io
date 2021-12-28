@@ -22,7 +22,23 @@ feature_row:
     btn_class: "btn--inverse"
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting." 
+    excerpt: "This is some sample content that goes here with **Markdown** formatting.
+    An Android mobile phone's accelerometer and Gyroscope data is used to detect potholes in realtime.
+![Image](https://user-images.githubusercontent.com/7314342/84470416-f26a0280-aca0-11ea-8fc1-d0a50099a787.png)
+Project github page [link](https://github.com/aswathselvam/Potholes)
+
+    " 
+
+gallery:
+  - url: /assets/images/unsplash-gallery-image-1.jpg
+    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+    alt: "placeholder image 1"
+  - url: /assets/images/unsplash-gallery-image-2.jpg
+    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+  - url: /assets/images/unsplash-gallery-image-3.jpg
+    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+    alt: "placeholder image 3"
 ---
 
 <style>
@@ -131,5 +147,11 @@ Inverse kinematics for a 6-DOF Robotic arm is calcuated by taking Jacobian Pseud
 
 # Realtime pothole Detection
 An Android mobile phone's accelerometer and Gyroscope data is used to detect potholes in realtime.
-![Image](https://user-images.githubusercontent.com/7314342/84470416-f26a0280-aca0-11ea-8fc1-d0a50099a787.png)
+![Image](https://user-images.githubusercontent.com/7314342/84470416-f26a0280-aca0-11ea-8fc1-d0a50099a787.png) \
 Project github page [link](https://github.com/aswathselvam/Potholes)
+
+<!-- 
+TODO:
+https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_pages/portfolio-archive.md
+-->
+<!-- {% include feature_row caption="This is a sample gallery to go along with this case study." %} -->
