@@ -1,0 +1,9 @@
+---
+layout: splash
+classes:
+  - landing
+title: Papers
+---
+
+25 March 2022:
+1. A ConvNet for the 2020s [pdf](https://arxiv.org/pdf/2201.03545.pdf)

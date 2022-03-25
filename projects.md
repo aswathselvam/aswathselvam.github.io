@@ -89,14 +89,14 @@ Text, Footer: #010101
 
 # OmniDirectinal Robot with UR5 Arm
 **Overview:**
-1. A 6DOF arm can manipulate objects in SO3(any position x,y,z or roll,pitch,yaw angles) space, however, one constraint remains, the arm's reachability.
+1. A 6DOF arm can manipulate objects in SE3(translation + rotation) space, however, one constraint remains, the arm's reachability.
 2. OmniDirectional wheeled mobile robots are free to move in the XY plane in any direction, allowing more freedom of movement than Non-Holonomic Car like robots. 
 
 Combine these two ideas, we get a high DOF arm + infinite reachability in XY plane. 
 To name a couple of examples, these robots can be used in warehouse operations and perform agricultural tasks.   
 
 **Technical approach:**
-1. For Arm: Calculation of inverse kinematic for the arm using Pseudo-Inverse Jacibian.
+1. For Arm: Calculation of inverse kinematic for the arm using Pseudo-Inverse Jacobian.
 2. For Robot base: Calculation of angular velocity of motors by inverting Forward Transformation from base frame to wheel frame. Then using PID for feedback control using errors in position. 
 
 <iframe width="500" height="350" src="https://www.youtube.com/embed/qoDo5TzVyWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

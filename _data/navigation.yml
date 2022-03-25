@@ -3,8 +3,8 @@ main:
     url:  /projects/
   - title: "Publications"
     url:  /publications/
-  - title: "Resume"
-    url:  https://drive.google.com/file/d/10VwTVtPlpl0fSlB2rbUKmEobyGJ6LFHR/view?usp=sharing
+  - title: "Blog"
+    url:  /blog/
 
 
 projects-list:
