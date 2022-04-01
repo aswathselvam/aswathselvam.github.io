@@ -7,3 +7,8 @@ title: Papers
 
 25 March 2022:
 1. A ConvNet for the 2020s [pdf](https://arxiv.org/pdf/2201.03545.pdf)
+
+1st April 2022:
+1. HyperNeRF [pdf](https://arxiv.org/pdf/2106.13228.pdf)
+2. 3D Neural Scene Representations for Visuomotor Control [pdf](https://arxiv.org/pdf/2107.04004.pdf)
+3. Learning Multi-Object Dynamics with Compositional Neural Radiance Fields [pdf](https://arxiv.org/pdf/2202.11855.pdf)
