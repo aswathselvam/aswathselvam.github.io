@@ -90,13 +90,15 @@ Text, Footer: #010101
 # Self Driving Vehicle Navigating A Dynamic Environment
 **Overview:**
 1. Predict the trajectory of a Self-Driving vehicle, given a Birds eye view of the traffic scene.
-2. Used Lyft's perdiction dataset and L5kit Jupyter notebooks template.
+2. Used Lyft's perdiction dataset and L5Kit's Jupyter notebooks template.
 
 **Technical approach:**
 1. Leveraging Attention mechanism of Vision Transformer and an Fully connected layer to predict the trajectory of a Self Driving Vehicle.
 
 <iframe width="500" height="350" src="https://www.youtube.com/embed/fpV1gaZ-MUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-Project github page [link](https://github.com/aswathselvam/ENPM-690/tree/master/Final_Project)
+Project GitHub page [link](https://github.com/aswathselvam/ENPM-690/tree/master/Final_Project)
+
+<hr>
 
 
 <div class="row">
@@ -105,7 +107,7 @@ Project github page [link](https://github.com/aswathselvam/ENPM-690/tree/master/
   </center></h1>
   ![Image](https://github.com/aswathselvam/ENPM-661/raw/master/Project2/simulation_video.gif)
 
-  Project github page [link](https://github.com/aswathselvam/ENPM-661/tree/master/Project2)
+  Project GitHub page [link](https://github.com/aswathselvam/ENPM-661/tree/master/Project2)
 
 
   </div>
@@ -114,11 +116,12 @@ Project github page [link](https://github.com/aswathselvam/ENPM-690/tree/master/
 
   ![Image](https://github.com/h-gokul/robot-planning/raw/main/Astar/simulation_video.gif)
 
-  Project github page [link](https://github.com/h-gokul/robot-planning/tree/main/Astar)
+  Project GitHub page [link](https://github.com/h-gokul/robot-planning/tree/main/Astar)
 
   </div>
 </div>
 
+<hr>
 
 # Planning of Panda Robotic Arm using MoveIt. 
 **Overview:**
@@ -127,6 +130,52 @@ Project github page [link](https://github.com/aswathselvam/ENPM-690/tree/master/
 3. Simulated in Gazebo and visualized the planner trajectory in Rviz.
 
 <iframe width="1463" height="563" src="https://www.youtube.com/embed/xSSkAvAXIlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Project GitHub page [link](https://github.com/aswathselvam/ENPM-661/tree/master/Project4)
+
+
+<hr>
+
+
+<div class="row">
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <h1><center> Curve Fitting </center></h1>
+  ![Image](https://github.com/aswathselvam/ENPM-673/raw/master/Homework1/Q2/output.png)
+
+  Project GitHub page [link](https://github.com/aswathselvam/ENPM-673/tree/master/Homework1/Q2)
+
+
+  </div>
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <h1><center> AR Cube Projection </center></h1>
+
+  <iframe width="1463" height="563" src="https://www.youtube.com/embed/Fvx0soFXT98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  Project GitHub page [link](https://github.com/aswathselvam/ENPM-673/tree/master/Project1)
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <h1><center> KNN Segmentation </center></h1>
+  
+  ![Image](https://github.com/aswathselvam/ENPM-673/blob/master/MidTerm/outputs/output1.png)
+  Project GitHub page [link](https://github.com/aswathselvam/ENPM-673/tree/master/MidTerm)
+
+
+  </div>
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <h1><center> Depth from 2 given Images </center></h1>
+
+  ![Image](https://github.com/aswathselvam/ENPM-673/raw/master/Project3/outputs/disparity_image_heat_curule.png)
+
+  Project GitHub page [link](https://github.com/aswathselvam/ENPM-673/tree/master/Project3)
+
+  </div>
+</div>
+
+<hr>
 
 
 # OmniDirectinal Robot with UR5 Arm
@@ -142,7 +191,9 @@ To name a couple of examples, these robots can be used in warehouse operations a
 2. For Robot base: Calculation of angular velocity of motors by inverting Forward Transformation from base frame to wheel frame. Then using PID for feedback control using errors in position. 
 
 <iframe width="500" height="350" src="https://www.youtube.com/embed/qoDo5TzVyWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-Project github page [link](https://github.com/aswathselvam/enpm662_final_project)
+Project GitHub page [link](https://github.com/aswathselvam/enpm662_final_project)
+
+<hr>
 
 
 # Ground plane segmentation
@@ -168,7 +219,7 @@ Running customized [Unet](https://arxiv.org/abs/1505.04597) on prepared dataset 
 <h1><center> Swarm Robots</center></h1>
 <iframe width="500" height="350" src="https://www.youtube.com/embed/7a76u_0sosA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Project github page [link](https://github.com/aswathselvam/swarm_robots)
+Project GitHub page [link](https://github.com/aswathselvam/swarm_robots)
 
 Multiple agents push a large object. Each agent plans a path to the destination using RRT* algorithm.
 
@@ -180,7 +231,7 @@ Multiple agents push a large object. Each agent plans a path to the destination 
 
 <iframe width="500" height="350" src="https://www.youtube.com/embed/_j-51JeMeYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Project github page [link](https://github.com/aswathselvam/AcmeRoboticsPathPlanner)
+Project GitHub page [link](https://github.com/aswathselvam/AcmeRoboticsPathPlanner)
 
 Inverse kinematics for a 6-DOF Robotic arm is calcuated by taking Jacobian Pseudo-Inverse of the Forward Transformation of each arm joints. Implemented with Coppelia-Sim simulation software.
 
@@ -190,7 +241,7 @@ Inverse kinematics for a 6-DOF Robotic arm is calcuated by taking Jacobian Pseud
 # Realtime pothole Detection
 An Android mobile phone's accelerometer and Gyroscope data is used to detect potholes in realtime.
 ![Image](https://user-images.githubusercontent.com/7314342/84470416-f26a0280-aca0-11ea-8fc1-d0a50099a787.png) \
-Project github page [link](https://github.com/aswathselvam/Potholes)
+Project GitHub page [link](https://github.com/aswathselvam/Potholes)
 
 <!-- 
 TODO:
