@@ -87,6 +87,48 @@ Text, Footer: #010101
 -->
 
 
+# Self Driving Vehicle Navigating A Dynamic Environment
+**Overview:**
+1. Predict the trajectory of a Self-Driving vehicle, given a Birds eye view of the traffic scene.
+2. Used Lyft's perdiction dataset and L5kit Jupyter notebooks template.
+
+**Technical approach:**
+1. Leveraging Attention mechanism of Vision Transformer and an Fully connected layer to predict the trajectory of a Self Driving Vehicle.
+
+<iframe width="500" height="350" src="https://www.youtube.com/embed/fpV1gaZ-MUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Project github page [link](https://github.com/aswathselvam/ENPM-690/tree/master/Final_Project)
+
+
+<div class="row">
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <h1><center> Dijsktra Path Planning
+  </center></h1>
+  ![Image](https://github.com/aswathselvam/ENPM-661/raw/master/Project2/simulation_video.gif)
+
+  Project github page [link](https://github.com/aswathselvam/ENPM-661/tree/master/Project2)
+
+
+  </div>
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <h1><center> A* Path Planning </center></h1>
+
+  ![Image](https://github.com/h-gokul/robot-planning/raw/main/Astar/simulation_video.gif)
+
+  Project github page [link](https://github.com/h-gokul/robot-planning/tree/main/Astar)
+
+  </div>
+</div>
+
+
+# Planning of Panda Robotic Arm using MoveIt. 
+**Overview:**
+1. Move arm from start location to goal location.
+2. Used Action server to control gripper.
+3. Simulated in Gazebo and visualized the planner trajectory in Rviz.
+
+<iframe width="1463" height="563" src="https://www.youtube.com/embed/xSSkAvAXIlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 # OmniDirectinal Robot with UR5 Arm
 **Overview:**
 1. A 6DOF arm can manipulate objects in SE3(translation + rotation) space, however, one constraint remains, the arm's reachability.
