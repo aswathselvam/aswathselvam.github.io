@@ -114,7 +114,7 @@ Project GitHub page [link](https://github.com/aswathselvam/ENPM-690/tree/master/
   <div class="column" style="background-color:#f0fff0;" markdown="1">
   <h1><center> A* Path Planning </center></h1>
 
-  ![Image](https://github.com/h-gokul/robot-planning/raw/main/Astar/simulation_video.gif)
+  ![Image](/assets/images/a_star.gif)
 
   Project GitHub page [link](https://github.com/h-gokul/robot-planning/tree/main/Astar)
 
@@ -122,6 +122,39 @@ Project GitHub page [link](https://github.com/aswathselvam/ENPM-690/tree/master/
 </div>
 
 <hr>
+
+# RRT CUDA
+**Overview**
+1. Parallize obstacle check with cuda kernels.
+Result: Ability to add more obstacle nodes than CPU version.
+
+<div class="row">
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <img src="https://user-images.githubusercontent.com/7314342/154130227-4f0e9850-eda1-4ef3-a0a8-092c19ffdfec.gif" alt="drawing" style="width:600px;"/>
+  </div>
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <img src="https://user-images.githubusercontent.com/7314342/153663525-cd496061-b493-440a-a8f1-6afcde2d3ace.gif" alt="drawing" style="width:600px;"/>
+  </div>
+</div>
+
+Project GitHub page [link](https://github.com/aswathselvam/Path-Planning)
+
+<hr>
+
+# Human Pose Estimation and Forecasting:
+**Overview**: 
+1. Improved accuracy from SOTA Poseformer architecture by using various loss functions for Human Pose estimation. 
+2. DA-STS-GCN(Domain Adaptive Space Time Separable Graph Convolutional Network) for Human Pose forecasting. 
+3. Trained the networks on Human 3.6M dataset.
+<div class="row">
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <img src="/assets/images/pose_estimation.png" alt="drawing" style="width:600px;"/>
+  </div>
+  <div class="column" style="background-color:#f0fff0;" markdown="1">
+  <img src="/assets/images/human_viz.gif" alt="drawing" style="width:600px;"/>
+  </div>
+</div>
+Report: [link](https://drive.google.com/file/d/1ev7CmSVooBv3sQ7oYpS1uv-AZE6Tynlq/view)
 
 # Planning of Panda Robotic Arm using MoveIt. 
 **Overview:**
@@ -160,7 +193,8 @@ Project GitHub page [link](https://github.com/aswathselvam/ENPM-661/tree/master/
   <div class="column" style="background-color:#f0fff0;" markdown="1">
   <h1><center> KNN Segmentation </center></h1>
   
-  ![Image](https://github.com/aswathselvam/ENPM-673/blob/master/MidTerm/outputs/output1.png)
+  <img src="/assets/images/knn.jpg" alt="drawing" style="width:600px;"/>
+
   Project GitHub page [link](https://github.com/aswathselvam/ENPM-673/tree/master/MidTerm)
 
 
