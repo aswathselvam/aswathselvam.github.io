@@ -87,7 +87,8 @@ Text, Footer: #010101
 -->
 
 
-# Self Driving Vehicle Navigating A Dynamic Environment
+## Self Driving Vehicle Navigating A Dynamic Environment
+
 **Overview:**
 1. Predict the trajectory of a Self-Driving vehicle, given a Birds eye view of the traffic scene.
 2. Used Lyft's perdiction dataset and L5Kit's Jupyter notebooks template.
@@ -96,7 +97,8 @@ Text, Footer: #010101
 1. Leveraging Attention mechanism of Vision Transformer and an Fully connected layer to predict the trajectory of a Self Driving Vehicle.
 
 <iframe width="500" height="350" src="https://www.youtube.com/embed/fpV1gaZ-MUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-Project GitHub page [link](https://github.com/aswathselvam/ENPM-690/tree/master/Final_Project)
+Project GitHub page [link](https://github.com/aswathselvam/ENPM-690/tree/master/Final_Project) \
+Report [link](https://github.com/aswathselvam/ENPM-690/blob/master/Final_Project/docs/ENPM690_Report.pdf)
 
 <hr>
 
@@ -123,7 +125,7 @@ Project GitHub page [link](https://github.com/aswathselvam/ENPM-690/tree/master/
 
 <hr>
 
-# RRT CUDA
+## RRT CUDA
 **Overview**
 1. Parallize obstacle check with cuda kernels.
 Result: Ability to add more obstacle nodes than CPU version.
@@ -141,6 +143,7 @@ Project GitHub page [link](https://github.com/aswathselvam/Path-Planning)
 
 <hr>
 
+
 # Human Pose Estimation and Forecasting:
 **Overview**: 
 1. Improved accuracy from SOTA Poseformer architecture by using various loss functions for Human Pose estimation. 
@@ -151,10 +154,12 @@ Project GitHub page [link](https://github.com/aswathselvam/Path-Planning)
   <img src="/assets/images/pose_estimation.png" alt="drawing" style="width:600px;"/>
   </div>
   <div class="column" style="background-color:#f0fff0;" markdown="1">
-  <img src="/assets/images/human_viz.gif" alt="drawing" style="width:600px;"/>
+  <img src="/assets/images/human_viz.gif" alt="drawing" style="width:550px;"/>
   </div>
 </div>
 Report: [link](https://drive.google.com/file/d/1ev7CmSVooBv3sQ7oYpS1uv-AZE6Tynlq/view)
+
+<hr>
 
 # Planning of Panda Robotic Arm using MoveIt. 
 **Overview:**
@@ -211,6 +216,11 @@ Project GitHub page [link](https://github.com/aswathselvam/ENPM-661/tree/master/
 
 <hr>
 
+# Lane detection:
+<iframe width="1465" height="502" src="https://www.youtube.com/embed/fkf3r3iCl74" title="Straight Lane detection" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Project GitHub page [link](https://github.com/aswathselvam/ENPM-673/blob/master/Project2/code/lanepredictor.py)
+
+<hr>
 
 # OmniDirectinal Robot with UR5 Arm
 **Overview:**
