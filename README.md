@@ -1,5 +1,11 @@
 # VvvebJs
 
+Local run 
+```
+docker-compose up
+```
+
+
 <p align="center">
   <img src="https://www.vvveb.com/admin/themes/default/img/biglogo.png" alt="Vvveb">
   <br><br>
