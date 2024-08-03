@@ -3,6 +3,8 @@
 Local run 
 ```
 docker-compose up
+Open http://localhost:8080/editor.html
+
 ```
 
 
