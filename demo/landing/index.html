@@ -473,7 +473,48 @@
     <div class="container" style="min-height:150px;" id="about-me">
       <p><b>About Me</b></p>
       <hr class="border-primary border-4 opacity-25">
-      <p></p><img src="img/my_photo.jpg" class="mw-100 align-left" width="200" height="200">&nbsp;Hello! I am Aswath
+      <p></p>
+
+
+      <div class="image-container">
+        <img src="img/my_photo.jpg" class="mw-100 align-left" width="200" height="200" alt="Aswath's Photo">
+
+        <div class="video-container"   class="mw-100 align-left" style="display: none;"  width="200" height="200" alt="Aswath's Photo">
+
+          <div id="progress"></div>
+
+          <div id="message"  ></div>
+          <div class="scene" id="spinner">
+            <div class="cube-wrapper">
+              <div class="cube">
+                <div class="cube-faces">
+                  <div class="cube-face bottom"></div>
+                  <div class="cube-face top"></div>
+                  <div class="cube-face left"></div>
+                  <div class="cube-face right"></div>
+                  <div class="cube-face back"></div>
+                  <div class="cube-face front"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <canvas id="canvas"  class="mw-100 align-left" width="200" height="200" ></canvas>
+          
+          <div id="quality">
+            <span id="fps"></span>
+          </div>
+          <div id="caminfo">
+            <span id="camid"></span>
+          </div>
+
+          <script src="gaussian-splatting-viewer.js"></script>
+
+        </div>
+    </div>
+
+      
+      
+      &nbsp;Hello! I am Aswath
       Muthuselvam, welcome to my personal website. In this space, I will share my projects and professional updates.
       Currently, I am a software engineer at <a href="https://www.magicleap.com/">Magic Leap</a>, working on Ground
       Truth data using advanced Camera Systems, Motion capture systems for applications like Hand Tracking,
@@ -481,11 +522,15 @@
       Engineering degree in Robotics. I also worked with Dinesh Manocha at the <a href="https://gamma.umd.edu/">GAMMA
         lab</a>.&nbsp; I graduated with a Bachelors degree in Electronics and Communications Engineering from Vellore
       Institute of Technology. During the final semester, I have interned at Ericsson India Global Services, where I
-      worked on “Deeplearning based disease detection in Horticultural crops.”<div><br>
-        <div>Check out my projects and publications below.<br></div>
-      </div>
-    </div>
+      worked on “Deeplearning based disease detection in Horticultural crops.”
+
+        
+        <div>
+          <br>Check out my projects and publications below.<br>
+        </div>
+
   </section>
+
   <section title="one column" class="py-4">
     <div class="container" style="min-height:150px;" id="projects-list-container">
       <p><b>Projects and Publications</b></p>
