@@ -7,6 +7,11 @@ Open http://localhost:8080/editor.html
 
 ```
 
+idx.dev run
+```
+python3 -m http.server 8080
+Open http://0.0.0.0:8080/editor.html
+```
 
 <p align="center">
   <img src="https://www.vvveb.com/admin/themes/default/img/biglogo.png" alt="Vvveb">
