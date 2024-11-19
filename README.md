@@ -11,6 +11,7 @@ idx.dev run
 ```
 python3 -m http.server 8080
 Open http://0.0.0.0:8080/editor.html
+Make edits in demo/landing/index.html
 ```
 
 <p align="center">
