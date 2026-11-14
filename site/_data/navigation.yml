@@ -1,0 +1,12 @@
+# Header menu. The CV link points to the CV set in your profile (CMS > Profile).
+main:
+  - title: "Publications"
+    url: /publications/
+  - title: "Projects"
+    url: /projects/
+  - title: "Activities"
+    url: /activities/
+  - title: "Blog"
+    url: /blog/
+  - title: "CV"
+    url: /cv/

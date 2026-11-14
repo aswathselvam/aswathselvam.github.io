@@ -1,0 +1,19 @@
+---
+layout: archive
+title: "Activities"
+permalink: /activities/
+author_profile: true
+---
+{%- assign activities = site.data.activities.items | sort: "date" | reverse -%}
+{%- if activities.size > 0 -%}
+<section id="activities">
+  <ul class="news-list">
+    {%- for n in activities -%}
+      <li><time datetime="{{ n.date | date: '%Y-%m-%d' }}">{{ n.date | date: "%b %Y" }}</time>
+        <span>{% if n.link %}<a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.text }}</a>{% else %}{{ n.text }}{% endif %}</span></li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- else -%}
+<p>Nothing here yet.</p>
+{%- endif -%}

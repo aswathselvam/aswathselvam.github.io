@@ -1,0 +1,10 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+redirect_from:
+  - /portfolio/
+---
+{% assign projects = site.portfolio | sort: "order" %}
+{% for post in projects %}{% include item-card.html item=post %}{% endfor %}

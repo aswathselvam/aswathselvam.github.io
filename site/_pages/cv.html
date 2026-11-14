@@ -1,0 +1,10 @@
+---
+layout: default
+title: "CV"
+permalink: /cv/
+sitemap: false
+---
+{% assign cv = site.data.profile.cv %}
+{% unless cv contains "://" %}{% assign cv = cv | relative_url %}{% endunless %}
+<meta http-equiv="refresh" content="0; url={{ cv }}">
+<p style="padding:2em">Opening my CV… <a href="{{ cv }}">Click here</a> if it doesn't open.</p>

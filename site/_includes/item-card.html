@@ -1,0 +1,42 @@
+{%- comment -%}
+  Renders one publication or project as a card.
+  Usage: {% include item-card.html item=post %}
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- assign yt_id = nil -%}
+{%- if item.youtube -%}
+  {%- assign yt_id = item.youtube | split: "v=" | last | split: "&" | first | split: "youtu.be/" | last | split: "embed/" | last | split: "?" | first -%}
+{%- endif -%}
+<article class="item-card{% unless item.media or yt_id %} item-card--no-media{% endunless %}">
+  {%- if item.media or yt_id -%}
+  <div class="item-card__media">
+    {%- if item.media -%}
+      {%- assign ext = item.media | split: "." | last | downcase -%}
+      {%- if ext == "mp4" or ext == "webm" -%}
+        <video src="{{ item.media | relative_url }}" autoplay muted loop playsinline preload="metadata" aria-label="{{ item.title | escape }}"></video>
+      {%- else -%}
+        <img src="{{ item.media | relative_url }}" alt="{{ item.title | escape }}" loading="lazy" width="240" height="240">
+      {%- endif -%}
+    {%- elsif yt_id -%}
+      <button class="yt-lite" type="button" data-yt="{{ yt_id }}" aria-label="Play video: {{ item.title | escape }}">
+        <img src="https://i.ytimg.com/vi/{{ yt_id }}/hqdefault.jpg" alt="" loading="lazy" width="240" height="180">
+        <span class="yt-lite__play" aria-hidden="true"></span>
+      </button>
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+  <div class="item-card__body">
+    <h3 class="item-card__title">{{ item.title }}</h3>
+    {%- if item.authors -%}
+      <p class="item-card__authors">{{ item.authors | replace: site.data.profile.name, "<strong>NAME_PLACEHOLDER</strong>" | replace: "NAME_PLACEHOLDER", site.data.profile.name }}</p>
+    {%- endif -%}
+    {%- if item.venue -%}<p class="item-card__venue">{{ item.venue }}</p>{%- endif -%}
+    <p class="item-card__links">
+      {%- for link in item.links -%}
+        <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% unless forloop.last %} / {% endunless %}
+      {%- endfor -%}
+      {%- if item.media and yt_id -%}{% if item.links.size > 0 %} / {% endif %}<a href="https://www.youtube.com/watch?v={{ yt_id }}" target="_blank" rel="noopener">Video</a>{%- endif -%}
+    </p>
+    <div class="item-card__desc">{{ item.content | markdownify }}</div>
+  </div>
+</article>

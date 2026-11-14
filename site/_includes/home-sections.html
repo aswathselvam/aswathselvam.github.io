@@ -1,0 +1,28 @@
+{%- assign experience = site.data.experience.items -%}
+{%- if experience.size > 0 -%}
+<section class="home-section" id="experience">
+  <h2>Companies &amp; Teams</h2>
+  <ul class="experience-list">
+    {%- for e in experience -%}
+      <li>
+        <strong>{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.company }}</a>{% else %}{{ e.company }}{% endif %}</strong>
+        {%- if e.teams and e.teams.size > 0 -%}<span class="experience-list__teams">{{ e.teams | join: " · " }}</span>{%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- endif -%}
+
+
+<section class="home-section" id="publications">
+  <h2>Publications</h2>
+  {%- assign pubs = site.publications | sort: "date" | reverse -%}
+  {%- for post in pubs -%}{% include item-card.html item=post %}{%- endfor -%}
+</section>
+
+<section class="home-section" id="projects">
+  <h2>Selected Projects</h2>
+  {%- assign featured = site.portfolio | where: "featured", true | sort: "order" -%}
+  {%- for post in featured -%}{% include item-card.html item=post %}{%- endfor -%}
+  <p class="home-section__more"><a href="{{ '/projects/' | relative_url }}">All projects →</a></p>
+</section>

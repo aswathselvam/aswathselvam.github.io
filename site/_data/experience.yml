@@ -1,0 +1,11 @@
+items:
+  - company: Magic Leap
+    url: https://www.magicleap.com/
+  - company: Google
+    teams:
+      - XR
+      - Syntec
+      - DeepMind
+    url: https://arvr.google.com/
+  - company: Ericsson
+    url: https://www.ericsson.com/

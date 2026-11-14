@@ -1,0 +1,185 @@
+# Sveltia CMS configuration: https://github.com/sveltia/sveltia-cms
+# Every "Save" in the editor creates a commit on the branch below.
+backend:
+  name: github
+  repo: aswathselvam/aswathselvam.github.io
+  branch: main
+  commit_messages:
+    create: "Add {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "Upload “{{path}}”"
+    deleteMedia: "Delete “{{path}}”"
+
+# The Jekyll site lives in the site/ folder of the repo
+media_folder: site/images/uploads
+public_folder: /images/uploads
+site_url: https://aswathselvam.github.io
+
+# Images are optimized in your browser *before* they are committed:
+# converted to WebP and scaled down to at most 1600px, so pages load fast.
+media_libraries:
+  default:
+    config:
+      max_file_size: 20000000
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1600
+          height: 1600
+        svg:
+          optimize: true
+display_url: https://aswathselvam.github.io
+
+collections:
+  - name: pages
+    label: Profile & Home
+    icon: person
+    files:
+      - name: profile
+        label: Profile (sidebar)
+        file: site/_data/profile.yml
+        media_folder: /site/images
+        public_folder: /images
+        fields:
+          - { name: name, label: Name }
+          - { name: avatar, label: Photo, widget: image }
+          - { name: bio, label: Short bio, widget: text, required: false }
+          - { name: location, label: Location, required: false }
+          - { name: employer, label: Employer, required: false }
+          - { name: email, label: Email, required: false }
+          - name: cv
+            label: CV (upload a PDF or paste a link)
+            widget: file
+            accept: application/pdf
+            media_folder: /site/files
+            public_folder: /files
+            required: false
+          - { name: github, label: GitHub username, required: false }
+          - { name: linkedin, label: LinkedIn username (the part after /in/), required: false }
+          - { name: twitter, label: X / Twitter username, required: false }
+          - { name: googlescholar, label: Google Scholar URL, required: false }
+
+      - name: about
+        label: About me (home page text)
+        file: site/_pages/about.md
+        fields:
+          - { name: title, label: Heading }
+          - { name: body, label: Text, widget: markdown }
+
+      - name: activities
+        label: Activities
+        file: site/_data/activities.yml
+        fields:
+          - name: items
+            label: Activities
+            label_singular: Activity
+            widget: list
+            summary: "{{fields.date}} — {{fields.text}}"
+            fields:
+              - { name: date, label: Date, widget: datetime, time_format: false, date_format: YYYY-MM-DD, format: YYYY-MM-DD }
+              - { name: text, label: Text }
+              - { name: link, label: Link (optional), required: false }
+
+      - name: experience
+        label: Companies & Teams
+        file: site/_data/experience.yml
+        fields:
+          - name: items
+            label: Companies
+            label_singular: Company
+            widget: list
+            summary: "{{fields.company}}"
+            fields:
+              - { name: company, label: Company }
+              - { name: teams, label: Teams (optional), widget: list, required: false, hint: "Comma-separated, e.g. XR, DeepMind" }
+              - { name: url, label: Website (optional), required: false }
+
+  - name: publications
+    label: Publications
+    label_singular: Publication
+    icon: article
+    folder: site/_publications
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} ({{venue}})"
+    sortable_fields: [date, title]
+    media_folder: /site/images/projects
+    public_folder: /images/projects
+    fields: &item_fields
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime, time_format: false, date_format: YYYY-MM-DD, format: YYYY-MM-DD }
+      - { name: venue, label: Venue (e.g. ICCV 2023), required: false }
+      - { name: authors, label: Authors, hint: "Your name is shown in bold automatically.", required: false }
+      - name: media
+        label: Image or video (MP4)
+        hint: Square works best. Use MP4 instead of GIF (much smaller).
+        widget: file
+        accept: "image/*,video/mp4,video/webm"
+        required: false
+      - { name: youtube, label: YouTube link, hint: "Shown as the thumbnail when no image is set, otherwise as a 'Video' link.", required: false }
+      - name: links
+        label: Links
+        label_singular: Link
+        widget: list
+        required: false
+        summary: "{{fields.label}}"
+        fields:
+          - { name: label, label: "Label (e.g. GitHub, arXiv, Report)" }
+          - { name: url, label: URL }
+      - { name: body, label: Description, widget: markdown, required: false }
+
+  - name: projects
+    label: Projects
+    label_singular: Project
+    icon: deployed_code
+    folder: site/_portfolio
+    create: true
+    slug: "{{slug}}"
+    summary: "{{order}} · {{title}}"
+    sortable_fields: [order, title]
+    media_folder: /site/images/projects
+    public_folder: /images/projects
+    fields:
+      - { name: title, label: Title }
+      - { name: order, label: Order, widget: number, value_type: int, hint: "Lower numbers are shown first.", default: 100 }
+      - { name: featured, label: Show on home page, widget: boolean, default: false }
+      - name: media
+        label: Image or video (MP4)
+        hint: Square works best. Use MP4 instead of GIF (much smaller).
+        widget: file
+        accept: "image/*,video/mp4,video/webm"
+        required: false
+      - { name: youtube, label: YouTube link, hint: "Shown as the thumbnail when no image is set, otherwise as a 'Video' link.", required: false }
+      - name: links
+        label: Links
+        label_singular: Link
+        widget: list
+        required: false
+        summary: "{{fields.label}}"
+        fields:
+          - { name: label, label: "Label (e.g. GitHub, Report)" }
+          - { name: url, label: URL }
+      - { name: body, label: Description, widget: markdown, required: false }
+
+  - name: posts
+    label: Blog Posts
+    label_singular: Blog Post
+    icon: edit_note
+    folder: site/_posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{date}} · {{title}}"
+    sortable_fields: [date, title]
+    media_folder: /site/images/blog
+    public_folder: /images/blog
+    fields:
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime, time_format: false, date_format: YYYY-MM-DD, format: YYYY-MM-DD }
+      - { name: excerpt, label: Short summary (shown in the blog list), widget: text, required: false }
+      - { name: tags, label: Tags, widget: list, required: false }
+      - name: body
+        label: Post
+        widget: markdown
+        hint: "Insert images with the image button. Text in the image's Title field is shown as its caption."
