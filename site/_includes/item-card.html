@@ -13,7 +13,7 @@
     {%- if item.media -%}
       {%- assign ext = item.media | split: "." | last | downcase -%}
       {%- if ext == "mp4" or ext == "webm" -%}
-        <video src="{{ item.media | relative_url }}" autoplay muted loop playsinline preload="metadata" aria-label="{{ item.title | escape }}"></video>
+        <video src="{{ item.media | relative_url }}" controls autoplay muted loop playsinline preload="metadata" aria-label="{{ item.title | escape }}"></video>
       {%- else -%}
         <img src="{{ item.media | relative_url }}" alt="{{ item.title | escape }}" loading="lazy" width="240" height="240">
       {%- endif -%}
