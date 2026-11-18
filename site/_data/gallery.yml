@@ -1,0 +1,7 @@
+items:
+  - title: 'CrossLoc3D: Aerial-Ground Cross-Source 3D Place Recognition'
+    media: /images/projects/crossloc3d.webp
+    url: https://aswathselvam.github.io/crossloc3d/
+  - title: Realtime Simultaneous Localization and Mapping - on Pixel phone
+    youtube: https://youtu.be/BLBZ_y-_ksw
+    url: /blog/2026/11/realtime-slam/

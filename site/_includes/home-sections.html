@@ -13,6 +13,41 @@
 </section>
 {%- endif -%}
 
+{%- assign gallery = site.data.gallery.items -%}
+{%- if gallery.size > 0 -%}
+<section class="home-section" id="gallery">
+  <h2>Selected Work</h2>
+  <div class="gallery-grid">
+    {%- for g in gallery -%}
+      {%- assign yt_id = nil -%}
+      {%- if g.youtube -%}
+        {%- assign yt_id = g.youtube | split: "v=" | last | split: "&" | first | split: "youtu.be/" | last | split: "embed/" | last | split: "?" | first -%}
+      {%- endif -%}
+      {%- assign href = g.url -%}
+      {%- if href and href contains "://" -%}{%- assign external = true -%}{%- else -%}{%- assign external = false -%}{%- assign href = g.url | relative_url -%}{%- endif -%}
+      <figure class="gallery-tile">
+        <div class="gallery-tile__media">
+          {%- if g.media -%}
+            {%- assign ext = g.media | split: "." | last | downcase -%}
+            {%- if ext == "mp4" or ext == "webm" -%}
+              <video src="{{ g.media | relative_url }}" autoplay muted loop playsinline preload="metadata" aria-label="{{ g.title | escape }}"></video>
+            {%- else -%}
+              {% if g.url %}<a href="{{ href }}"{% if external %} target="_blank" rel="noopener"{% endif %}>{% endif %}<img src="{{ g.media | relative_url }}" alt="{{ g.title | escape }}" loading="lazy">{% if g.url %}</a>{% endif %}
+            {%- endif -%}
+          {%- elsif yt_id -%}
+            <button class="yt-lite" type="button" data-yt="{{ yt_id }}" aria-label="Play video: {{ g.title | escape }}">
+              <img src="https://i.ytimg.com/vi/{{ yt_id }}/hqdefault.jpg" alt="" loading="lazy">
+              <span class="yt-lite__play" aria-hidden="true"></span>
+            </button>
+          {%- endif -%}
+        </div>
+        <figcaption>{% if g.url %}<a href="{{ href }}"{% if external %} target="_blank" rel="noopener"{% endif %}>{{ g.title }}</a>{% else %}{{ g.title }}{% endif %}</figcaption>
+      </figure>
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}
+
 
 <section class="home-section" id="publications">
   <h2>Publications</h2>

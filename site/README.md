@@ -23,6 +23,7 @@ The token is stored only in your browser. Use **Sign Out** on shared computers.
 | Profile & Home → About me | `site/_pages/about.md` |
 | Profile & Home → Activities | `site/_data/activities.yml` |
 | Profile & Home → Companies & Teams | `site/_data/experience.yml` |
+| Profile & Home → Selected Work gallery | `site/_data/gallery.yml` |
 | Publications | `site/_publications/*.md` |
 | Projects | `site/_portfolio/*.md` (`featured: true` shows it on the home page) |
 | Blog Posts | `site/_posts/YYYY-MM-DD-title.md`, images in `site/images/blog/` |

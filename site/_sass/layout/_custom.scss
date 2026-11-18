@@ -57,6 +57,32 @@
 }
 .experience-list__teams { margin-left: .5em; color: var(--global-fig-caption-color); }
 
+/* Selected work gallery: square tiles (a third of the content width), as many columns as fit */
+.gallery-grid {
+  display: grid; gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+}
+.gallery-tile { display: block; margin: 0; } /* the theme makes figures flex boxes, which shrink the media to its content */
+.gallery-tile__media img,
+.gallery-tile__media video,
+.gallery-tile__media iframe,
+.gallery-tile__media .yt-lite {
+  display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+  border: 0; border-radius: 6px; background: var(--global-border-color);
+  margin: 0;
+}
+.gallery-tile__media a img { transition: opacity .15s; }
+.gallery-tile__media a:hover img { opacity: .85; }
+.gallery-tile figcaption { margin-top: .4em; font-size: .85em; font-weight: 600; line-height: 1.35; }
+
+/* Blog: YouTube videos fill the content width */
+.page__content p > .yt-lite,
+.page__content p > iframe[src*="youtube"] {
+  display: block; width: 100%; aspect-ratio: 16 / 9; height: auto;
+  margin: 1.5em 0; border: 0; border-radius: 6px; background: #000;
+}
+.page__content p > .yt-lite img { width: 100%; height: 100%; object-fit: cover; }
+
 /* Blog: images with a title get a caption (see footer/custom.html) */
 .page__content figure.blog-figure { display: block; margin: 1.5em 0; text-align: center; }
 .page__content figure.blog-figure img { max-width: 100%; height: auto; border-radius: 6px; }

@@ -96,6 +96,23 @@ collections:
               - { name: teams, label: Teams (optional), widget: list, required: false, hint: "Comma-separated, e.g. XR, DeepMind" }
               - { name: url, label: Website (optional), required: false }
 
+      - name: gallery
+        label: Selected Work gallery
+        file: site/_data/gallery.yml
+        media_folder: /site/images/projects
+        public_folder: /images/projects
+        fields:
+          - name: items
+            label: Gallery items
+            label_singular: Item
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: Title }
+              - { name: media, label: Image or video (MP4), widget: file, accept: "image/*,video/mp4,video/webm", required: false, hint: "Leave empty to use the YouTube thumbnail." }
+              - { name: youtube, label: YouTube link (optional), required: false }
+              - { name: url, label: Link (optional), required: false, hint: "Page the title links to, e.g. a blog post or project page." }
+
   - name: publications
     label: Publications
     label_singular: Publication
