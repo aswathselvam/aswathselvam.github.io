@@ -4,10 +4,29 @@ document.addEventListener('click', function (e) {
   if (!btn) return;
   var f = document.createElement('iframe');
   f.src = 'https://www.youtube-nocookie.com/embed/' + btn.dataset.yt + '?autoplay=1&mute=1&loop=1&playlist=' + btn.dataset.yt;
-  f.allow = 'autoplay; encrypted-media; picture-in-picture';
+  f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
   f.allowFullscreen = true;
   f.title = btn.getAttribute('aria-label');
+  // YouTube hides its own fullscreen button in small players, so add one
+  var fs = document.createElement('button');
+  fs.type = 'button';
+  fs.className = 'yt-fs';
+  fs.setAttribute('aria-label', 'Full screen');
+  fs.title = 'Full screen';
+  fs.dataset.yt = btn.dataset.yt;
+  var parent = btn.parentNode;
+  if (getComputedStyle(parent).position === 'static') parent.style.position = 'relative';
   btn.replaceWith(f);
+  f.after(fs);
+});
+
+document.addEventListener('click', function (e) {
+  var fs = e.target.closest('.yt-fs');
+  if (!fs) return;
+  var f = fs.previousElementSibling;
+  var req = f && (f.requestFullscreen || f.webkitRequestFullscreen);
+  if (req) req.call(f);
+  else window.open('https://www.youtube.com/watch?v=' + fs.dataset.yt, '_blank', 'noopener');
 });
 
 
